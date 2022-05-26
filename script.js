@@ -1,0 +1,30 @@
+document.querySelectorAll('.item').forEach(item => {
+   item.addEventListener('dragstart', dragStart);
+   item.addEventListener('dragend', dragEnd);
+});
+
+document.querySelectorAll('.area').forEach(area => {
+   area.addEventListener('dragover', dragOver);
+   area.addEventListener('dragleave', dragLeave);
+   area.addEventListener('drop', drop);
+});
+
+                     // Funções Item\\
+
+function dragStart(e){
+   e.currentTarget.classList.add('dragging');
+}
+function dragEnd(e){
+   e.currentTarget.classList.remove('dragging');
+}
+                     // Funções Area\\
+
+function dragOver(e){
+
+}
+function dragLeave(e){
+
+}
+function drop(e){
+
+}
